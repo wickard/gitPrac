@@ -1,20 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>JS Deli Counter</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
-  </head>
-  <body>
-    <main id="main">
-    </main>
-    <script src="index.js"></script>
-    <!-- Open this file and call `mocha.run()` in console to run tests -->
-    <div id="mocha"></div>
-    <script src="node_modules/mocha/mocha.js"></script>
-    <script src="node_modules/expect/umd/expect.min.js"></script>
-    <script>mocha.setup('bdd');</script>
-    <script src="test/index-test.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>The WebPage</h1>
+    </div>
+    <div id="nav">
+      <ul>
+        <a href="">
+          <li>Home</li>
+        </a>
+        <a href="">
+          <li>Music</li>
+        </a>
+        <a href="">
+          <li>About</li>
+        </a>
+        <a href="">
+          <li>Tech</li>
+        </a>
+        <a href="">
+          <li>Health</li>
+        </a>
+        <div style="clear: both"></div>
+      </ul>
+    </div>
+    <div id="middle">
+      <div id="left">
+        
+        <div class="post">
+          <div class="title">title1</div>
+          <div class="description">
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description... <a href="#">conintue reading</a>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="title">title2</div>
+          <div class="description">
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description... <a href="#">conintue reading</a>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="title">title2</div>
+          <div class="description">
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description test description test description test description 
+            test description test description test description test description test description... <a href="#">conintue reading</a>
+          </div>
+        </div>
+
+      </div>
+      <div id="right">
+        <h2>Latest Posts</h2>
+        <div class="latest_post">Title1</div>
+        <div class="latest_post">Title1</div>
+        <div class="latest_post">Title1</div>
+        <div class="latest_post">Title1</div>
+        <div class="latest_post">Title1</div><br>
+        <div id="news_letter">
+          <div class="news_letter_head">Our News Letter</div>
+          <input type="text">
+          <input type="submit">
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+    <div id="footer">
+      Copyright &copy; 2016 Josh~
+    </div>
+  </div>
+</body>
 </html>
